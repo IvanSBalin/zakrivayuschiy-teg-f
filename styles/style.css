@@ -89,7 +89,7 @@
   opacity: 60%;
 }
 
-.theme-menu__button:hover, .theme-menu__button:disabled{
+.theme-menu__button:hover, .theme-menu__button:disabled {
   opacity: 60%;
 }
 
@@ -119,10 +119,6 @@
 
 .main {
   margin-inline: auto;
-}
-
-.content__list {
-
 }
 
 .content__item {
@@ -161,7 +157,16 @@
   font-family: var(--accent-font);
   inset-block-start: 15px;
   inset-inline-end: 5px;
-  -webkit-text-stroke: thin var(--watermarck-color);
+}
+
+@supports (
+  (text-stroke: 1px var(--watermarck-color)) or
+    (-webkit-text-stroke: 1px var(--watermarck-color))
+) {
+  .watermark {
+    text-stroke: 1px var(--watermarck-color);
+    -webkit-text-stroke: 1px var(--watermarck-color);
+  }
 }
 
 .card__picture {
@@ -177,7 +182,7 @@
 
 /*Beauty section*/
 
-.button__text{
+.button__text {
   position: relative;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -234,7 +239,7 @@
   outline: none;
 }
 
-.button__like:focus {
+.button__like:focus-visible {
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
@@ -378,9 +383,6 @@ dialog::backdrop {
 }
 
 @media (width < 375px) {
-  .page {
-
-  }
 
   .header {
     margin: auto;
