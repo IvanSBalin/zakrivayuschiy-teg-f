@@ -348,31 +348,31 @@ dialog::backdrop {
   height: 38px;
 }
 
-.brown_filter {
+.html_filter {
   filter: saturate(30%);
 }
 
-.crazy_filter {
+.css_filter {
   filter: saturate(350%);
 }
 
-.darkpink_filter {
+.desigions_filter {
   filter: hue-rotate(30deg);
 }
 
-.green_filter {
+.care_filter {
   filter: invert(80%);
 }
 
-.darkbrown_filter {
+.support_filter {
   filter: sepia(90%);
 }
 
-.invisible_filter {
+.lifes-style_filter {
   filter: blur(20px);
 }
 
-.orange_filter {
+.experience_filter {
   filter: saturate(250%) hue-rotate(90deg) blur(0.2rem) brightness(80%)
   contrast(50%);
 }
