@@ -17,7 +17,7 @@
 }
 
 :root.theme-dark {
-    --main-font: 'Inter', sans-seri
+    --main-font: 'Inter', sans-serif;
     --main-font-wight: 465;
     --accent-font: 'Press Start 2P', system-ui;
     --accent-font-weight: 400;
