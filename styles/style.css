@@ -269,7 +269,7 @@
   transform: scaleX(1);
 }
 
-/*Footer*/
+/*Section footer*/
 .footer__button {
   display: flex;
   justify-content: center;
@@ -297,7 +297,7 @@
   position: relative;
   mix-blend-mode: difference;
   flex-shrink: 0;
-  color: var(--text-color);
+  color: var(--accent-text-color);
   text-align: center;
 }
 
@@ -338,7 +338,7 @@
 }
 
 .modal__text {
-  color: var(--text-color);
+  color: var(--accent-text-color);
   font-family: var(--accent-font);
   font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
   mix-blend-mode: difference;
@@ -363,31 +363,31 @@ dialog::backdrop {
 
 /*Filters*/
 
-.html_filter {
+.saturate_thirty_filter {
   filter: saturate(30%);
 }
 
-.css_filter {
+.acid_filter {
   filter: saturate(350%);
 }
 
-.desigions_filter {
+.deep_violet_filter {
   filter: hue-rotate(30deg);
 }
 
-.care_filter {
+.negative_green_filter {
   filter: invert(80%);
 }
 
-.support_filter {
+.sepia_filter {
   filter: sepia(90%);
 }
 
-.lifes-style_filter {
+.blur_filter {
   filter: blur(20px);
 }
 
-.experience_filter {
+.red_tomato_filter {
   filter: saturate(250%) hue-rotate(90deg) blur(0.2rem) brightness(80%)
   contrast(50%);
 }
