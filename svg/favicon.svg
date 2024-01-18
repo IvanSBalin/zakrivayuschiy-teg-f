@@ -1,18 +1,14 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="var(--main-text-color)" xmlns="http://www.w3.org/2000/svg">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
-        :root {
-        fill: var(--main-text-color);
-        }
-
         @media (prefers-color-scheme: light) {
             :root {
-                fill: var(--main-text-color);
+                fill: #000000;
             }
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                fill: var(--main-text-color);
+                fill: #00CC14;
             }
         }
     </style>
