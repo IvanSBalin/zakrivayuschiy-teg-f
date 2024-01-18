@@ -139,7 +139,7 @@
   font-variation-settings: "wght" var(--main-font-bold);
   font-family: var(--main-font);
   font-size: var(--main-font-size);
-  line-height: 1.1;
+  line-height: 1.2;
   padding: 5px 10px;
 }
 
@@ -156,8 +156,8 @@
   position: absolute;
   font-size: 14px;
   font-family: var(--accent-font);
-  inset-block-start: 15px;
-  inset-inline-end: 5px;
+  inset-block-start: 22px;
+  inset-inline-end: 11px;
 }
 
 @supports (
@@ -234,7 +234,7 @@
   color: var(--accent-color);
   cursor: pointer;
   border: 2px solid var(--side-button-color);
-  padding: 9px 17px;
+  padding: 9px 17px 5px;
 }
 
 .button__like:focus {
