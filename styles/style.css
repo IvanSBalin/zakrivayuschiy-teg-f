@@ -355,6 +355,7 @@ dialog::backdrop {
 }
 
 .modal__ok {
+  text-transform: uppercase;
   width: 289px;
   margin: 11px 0;
   height: 38px;
