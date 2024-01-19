@@ -321,11 +321,11 @@
 }
 
 .modal[open]::backdrop {
-  background-color: var(--accent-color);
+  background-color:#000000;
   opacity: 0.75;
 }
 
-.modal__inner{
+.modal__inner {
   display: flex;
   flex-direction: row;
   inline-size: clamp(16.0625rem, 13.2023rem + 12.2034vw, 18.3125rem);
