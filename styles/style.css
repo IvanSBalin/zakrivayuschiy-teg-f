@@ -271,6 +271,10 @@
 }
 
 /*Section footer*/
+.footer {
+  display: block;
+}
+
 .footer__button {
   display: flex;
   justify-content: center;
@@ -304,17 +308,14 @@
 
 /*Modal window*/
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  display: flex;
   max-width: 357px;
-  margin: 0;
+  margin: auto;
   background-color: var(--bg-color);
   font-family: var(--main-font), sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   border: 2px solid var(--accent-color);
-  transform: translate(-50%, -50%);
 }
 
 .modal__inner {
@@ -350,6 +351,11 @@
   margin: 13px 0;
 }
 
+.modal:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
 dialog::backdrop {
   opacity: 0.75;
   background: #000000;
@@ -363,7 +369,6 @@ dialog::backdrop {
 }
 
 /*Filters*/
-
 .saturate_thirty_filter {
   filter: saturate(30%);
 }
