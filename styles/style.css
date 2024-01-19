@@ -308,33 +308,34 @@
 
 /*Modal window*/
 .modal {
-  display: flex;
-  max-width: 357px;
-  margin: auto;
   background-color: var(--bg-color);
   font-family: var(--main-font), sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
   border: 2px solid var(--accent-color);
 }
 
-.modal__inner {
+.modal[open] {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  gap: 30px;
+  padding: 32px 32px 30px;
 }
 
-.wrapper {
+.modal[open]::backdrop {
+  background-color: var(--accent-color);
+  opacity: 0.75;
+}
+
+.modal__inner{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  inline-size: clamp(16.0625rem, 13.2023rem + 12.2034vw, 18.3125rem);
   gap: 20px;
-  justify-content: space-between;
 }
 
 .modal__button__icon {
-  width: 43px;
-  height: 43px;
+  margin-top: 21px;
+  width: 39px;
+  height: 39px;
   z-index: 1;
   color: var(--accent-color, #00cc14);
 }
@@ -350,21 +351,6 @@
   width: 100%;
   margin: 13px 0;
   transition: opacity 0.3s ease-in-out;
-}
-
-dialog:not([open]) {
-  pointer-events: none;
-  opacity: 0;
-}
-
-dialog {
-  position: fixed;
-  inset: 0;
-}
-
-dialog::backdrop {
-  opacity: 0.75;
-  background: #000000;
 }
 
 .modal__ok {

@@ -634,22 +634,16 @@
         </button>
         <dialog id="dialog-id" class="modal">
           <div class="modal__inner">
-            <div class="wrapper">
-              <svg class="modal__button__icon" viewBox="0 0 28 28">
-                <use href="svg/floppy_1.svg#favicon" />
-              </svg>
-              <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
-            </div>
-            <form method="dialog" onsubmit="">
-              <button
-                type="submit"
-                class="modal__ok button__like"
-                onclick="window['dialog-id'].close();"
-              >
-                <span class="button__text button-size">ok</span>
-              </button>
-            </form>
+            <svg class="modal__button__icon" viewBox="0 0 28 28">
+              <use href="svg/floppy_1.svg#favicon" />
+            </svg>
+            <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
           </div>
+          <form method="dialog" onsubmit="">
+            <button type="submit" class="modal__ok button__like">
+              <span class="button__text button-size">ok</span>
+            </button>
+          </form>
         </dialog>
       </section>
     </main>
