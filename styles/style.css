@@ -94,10 +94,6 @@
   opacity: 60%;
 }
 
-.theme-menu__button:hover {
-  cursor: pointer;
-}
-
 .theme-menu__button:focus {
   outline: none;
 }
@@ -159,6 +155,9 @@
   inset-block-start: 25px;
   inset-inline-end: 25px;
   opacity: 0.5;
+  text-shadow: 0 -1px 0 var(--watermarck-color),
+  0  1px 0 var(--watermarck-color), 0 1px 0  var(--watermarck-color),
+  0 -1px 0 var(--watermarck-color);
 }
 
 @supports (
